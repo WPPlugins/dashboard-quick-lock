@@ -1,0 +1,9 @@
+.toplevel_page_wp-lock-settings  .wp-menu-image:before{
+    content: "" !important;
+}
+#lock-screen .widget-wrap .normal-notifications ul li a span img{
+    margin-top: 10px;
+}
+#lock-screen .login-wrap .credential-cntnr input[type="password"], input[type="password"]{
+     border-radius: 0px !important;
+     -webkit-border-radius: 0px !important; }

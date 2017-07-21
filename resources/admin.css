@@ -1,0 +1,528 @@
+.lock-outer-frame{
+    float: left;
+    width:100%;
+    padding-top: 20px;
+}
+.lock-data-wrap-left{
+    float: left;
+    width:75%;
+}
+.lock-data-wrap-right{
+    float: right;
+    width:300px;
+}
+/*----------------------------- common elements -------------*/
+.lock-outer-frame h5{
+    color: #010101;
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: bold;
+}
+.lock-outer-frame h4{
+    color: #010101;
+    font-size: 16px;
+    line-height: 17px;
+    font-weight: normal;
+}
+.lock-outer-frame input[type="text"]{
+    padding: 3px 6px;
+    outline: 0;
+    border: 1px solid #ddd;
+    background: transparent;
+    box-shadow: none;
+    color: #333;
+    font-size: 13px;
+}
+.lock-outer-frame .featured-panel{
+    float: left;
+    border:1px solid #bababa;
+    padding: 40px 45px 45px 45px;
+    position: relative;
+    width:100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin-top:15px;
+    margin-bottom: 50px;
+    font-size: 16px;
+}
+.lock-outer-frame .featured-panel h5{
+    margin:0 0 15px 0;
+}
+.lock-outer-frame .featured-panel h4{
+    margin:0 0 15px 0;
+}
+.lock-outer-frame .featured-panel .hndle-head{
+    position: absolute;
+    width:auto;
+    color: #717171;
+    background: #f1f1f1;
+    padding:5px;
+    top:-15px;
+    left: 30px;
+    cursor:auto;
+}
+.lock-outer-frame .button-wrap{
+    float: left;
+    width:100%;
+    margin-top: 20px;
+}
+.lock-outer-frame .split-input-frame{
+    float: left;
+    width:100%;
+    display: block;
+    margin-bottom: 20px;
+}
+.lock-outer-frame .split-input-frame input[type="password"]{
+    width:30px;
+    height: 25px;
+    margin-right: 8px;
+}
+.lock-outer-frame .select-wrap{
+    float: left;
+    width:100%;
+    margin-top:20px;
+}
+.lock-outer-frame .select-wrap h5{
+    float: left;
+    width:auto !important;
+    margin:5px 15px 0 0 !important;
+}
+.lock-outer-frame .featured-panel-left-frame{
+    float: left;
+    width:50%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding:15px;
+    min-height: 100px;
+    padding-right:45px;
+      border: solid 1px #f1f1f1;
+    border-right:none;
+}
+.lock-outer-frame .featured-panel-right-frame{
+    float: left;
+    width:49%;
+    padding:15px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    min-height: 100px;
+    padding-left:45px;
+       border: solid 1px #f1f1f1;
+    border-left:none;
+}
+.lock-outer-frame .divider-line{
+    position: relative;
+    width:1px;
+    background: #bababa;
+    z-index: 1;
+    float: left;
+}
+.lock-outer-frame .divider-line:after{
+    content: '';
+    background: #f1f1f1;
+    bottom: 0;
+    left: 0;
+    width:1px;
+    position: relative;
+}
+.lock-outer-frame .circular-wrap{
+    position: relative;
+    float: left;
+    top:40%;
+    border-radius: 50%;
+    border:1px solid #bababa;
+    width:53px;
+    height: 53px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 53px;
+    margin:-26px 0 0 -26px;
+    background: #f1f1f1;
+}
+.lock-outer-frame .image-prev-frame{
+    float: left;
+    width:100%;
+}
+.lock-outer-frame .image-prev-frame ul{
+    float: left;
+    margin:15px 0 18px 0;
+    padding: 0;
+}
+.lock-outer-frame .image-prev-frame ul > li{
+    list-style: none;
+    display: inline-block;
+    width:127px;
+    height: 87px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border:1px solid #bababa;
+    margin:0 13px 13px 0;
+    float: left;
+    padding: 4px;
+    position: relative;
+    transition: all .3s ease-in;
+    cursor: pointer;
+}
+.lock-outer-frame .image-prev-frame ul > li input[type="checkbox"]{
+    display: none;
+}
+.lock-outer-frame .image-prev-frame ul > li.selected:after{
+    content: '';
+    position: absolute;
+    width: 117px;
+    height: 77px;
+    left: 4px;
+    top: 4px;
+    background: rgba(0,0,0,.2) url('img/tick.png') no-repeat center;
+    cursor: pointer;
+}
+.lock-outer-frame .image-prev-frame ul > li.imgloader:after{
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 75px;
+    left: 5px;
+    top: 5px;
+    background: #000 url('img/loader.png') no-repeat center;
+    background: rgba(0,0,0,.7) url('img/loader.png') no-repeat center;
+    cursor: pointer;
+}
+.lock-outer-frame .image-prev-frame ul > li.add-new:after{
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 75px;
+    left: 5px;
+    top: 5px;
+    background: transparent url('img/add.png') no-repeat center;
+    cursor: pointer;    
+}
+.lock-outer-frame .image-prev-frame ul > li img{
+    width:117px;
+    height: 77px;
+}
+/*----------------------------- color picker outer wrap ----------------------*/
+.lock-outer-frame .color-picker-outer-wrap{
+    float: left;
+    width:100%;
+}
+.lock-outer-frame .color-picker-outer-wrap .color-pool-frame{
+    float: left;
+    width:100%;
+}
+.lock-outer-frame .color-picker-outer-wrap .color-pool-frame ul{
+    float: left;
+    width:345px;
+    margin:15px 0 15px 0;
+    padding: 0;
+}
+.lock-outer-frame .color-picker-outer-wrap .color-pool-frame ul li{
+    float: left;
+    display: inline-block;
+    list-style: none;
+    width:16%;
+    height: 45px;
+    position: relative;
+    cursor: pointer;
+    margin:0;
+    padding: 0;
+}
+.lock-outer-frame .color-picker-outer-wrap .color-pool-frame ul li.selected:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: #000 url('img/tick.png') no-repeat center;
+    background: transparent url('img/tick.png') no-repeat center;
+    cursor: default; 
+}
+.lock-outer-frame .color-picker-outer-wrap .color-pool-frame ul li input[type="checkbox"]{
+    display: none;
+}
+.lock-outer-frame .color-selector-frame{
+    float: left;
+    width:100%;
+}
+.lock-outer-frame .color-selector-frame ul{ 
+    float: left;
+    width:100%;
+    margin:0 0 15px 0;
+    padding: 0;
+}
+.lock-outer-frame .color-selector-frame ul li{ 
+    float: left;
+    width:27.5px;
+    height: 28px;
+    position: relative;
+    cursor: pointer;
+    margin:0;
+    padding: 0;
+}
+.lock-outer-frame .color-selector-frame ul li:active{
+    -ms-transform: scale(1,1.3); /* IE 9 */
+    -webkit-transform: scale(1,1.3); /* Chrome, Safari, Opera */
+    transform: scale(1,1.3); /* Standard syntax */
+    background: red;
+    z-index: 1;    
+}
+.lock-outer-frame .color-selector-frame ul li.active{
+    -ms-transform: scale(1,1.3); /* IE 9 */
+    -webkit-transform: scale(1,1.3); /* Chrome, Safari, Opera */
+    transform: scale(1,1.3); /* Standard syntax */
+    background: red;
+    z-index: 1;
+}
+.lock-outer-frame .gray-box{
+    width:100%;
+    display: inline-block;
+    margin-bottom: 30px;
+   
+}
+.fb-like-box{
+     background: #fff;
+     border: solid 1px #ccc;
+}
+.fb-like-box > div {
+      margin: -1px 0px 0px -1px; 
+}
+.lock-outer-frame .lock-display-none{
+    display: none;
+}
+.lock-outer-frame .lock_error{
+    color: red;
+    display: none;
+}
+.lock-outer-frame .lock_success{
+    color: #27C01A;
+}
+.lock-not-mask{
+	position: fixed;
+	z-index: 100000;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	opacity: .5;
+}
+.lock-auto-lock-not{
+	width: 300px;
+	height: 75px;
+	position: fixed;
+	z-index: 100001;
+	top: 25%;
+	left: 40%;
+	padding: 30px;
+	background: #fff;
+	border: solid 1px #ccc;
+
+}
+
+.lock-loader{
+    background: url('img/loader-transparent.gif') no-repeat;
+    height: 32px;
+    width: 100%;
+    display: none;
+    clear: both;
+}
+
+.lock-outer-frame .lock_pallete{
+    display: none;   
+}
+.vegas-background{
+    z-index: 100110 !important;
+}
+.btn_remove_image{
+    position: absolute;
+    width:16px;
+    height: 16px;
+    background: transparent url('img/close.png') no-repeat;
+    float: right;
+    top: -8px;
+    right: -10px;
+}
+.selected-section{
+    background: #e9e9e9;
+    
+   
+}
+.selected-section.left{
+     border: solid 1px #bababa;
+    border-right:none;
+}
+.selected-section.right{
+     border: solid 1px #bababa;
+    border-left:none;
+}
+
+.blue-box{
+    border: solid 1px #bababa;
+    background: #fff;
+    height: 200px;
+    text-align: center;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.blue-box .quintet-site-link{
+    width: 100%;
+    height: 200px;
+    float: left;
+    text-decoration: none;
+}
+.blue-box .quintet-site-link span{
+    width: 100%;
+    font-size: 20px;
+    text-decoration: none;
+    line-height: 43px;
+}
+
+/*-----------------  media queries --------------*/
+@media all and (max-width : 1255px) {
+    .lock-data-wrap-left{
+        float: left;
+        width:100%;
+    }
+    .lock-data-wrap-right{
+        float: left;
+        width:100%;
+    }
+    .lock-outer-frame .color-picker-outer-wrap .color-pool-frame ul{
+        width:100%;
+    }
+    .lock-outer-frame .featured-panel-left-frame{
+        padding-right: 25px;
+    }
+    .lock-outer-frame .featured-panel-right-frame{
+        padding-left: 40px;
+    }
+    .lock-outer-frame .color-selector-frame ul li:active{
+        -ms-transform: scale(1.1,1.1); /* IE 9 */
+        -webkit-transform: scale(1.1,1.1); /* Chrome, Safari, Opera */
+        transform: scale(1.1,1.1); /* Standard syntax */
+        background: red;
+        z-index: 1;    
+    }
+    .lock-outer-frame .color-selector-frame ul li.active{
+        -ms-transform: scale(1.1,1.1); /* IE 9 */
+        -webkit-transform: scale(1.1,1.1); /* Chrome, Safari, Opera */
+        transform: scale(1.1,1.1); /* Standard syntax */
+        background: red;
+        z-index: 1;
+    }
+    .lock-outer-frame .color-selector-frame ul li{
+        width:8%;
+    }
+}
+
+.lock-notice{
+    position: relative;
+    margin: 1em 0;
+    background: #F9F9F9;
+    padding: 1em 1em 1em 2em;
+    border-left: 4px solid #DDD;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+    width: 425px;
+}
+.lock-notice:before {
+    position: absolute;
+    top: 50%;
+    margin-top: -17px;
+    left: -17px;
+    background-color: #DDD;
+    color: #FFF;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    font-family: Georgia;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+.lock-notice h3{
+    font: 600 100%/100% 'Roboto', sans-serif;
+}
+.lock-notice p{
+    margin: 0;
+    font: 400 100%/100% 'Roboto', sans-serif;
+    padding-bottom: 10px;
+}
+.lock-warning{
+    border-color: #ff7700;
+}
+.lock-warning p b{
+    color: red;
+    font-weight: bold;
+}
+.lock-warning:before {
+    content: "!";
+    background-color: #ff7700;
+    font: 300 20px/26px 'Roboto', sans-serif;
+}
+.lock-confirm{
+    position: fixed;
+    top: 40%;
+    left: 28%;
+    z-index: 100;
+    width: 300px;
+    border-color: #E0645C;
+}
+.lock-confirm:before{
+    content: "x";
+    background-color: #E0645C;
+    font: 300 20px/26px 'Roboto', sans-serif;
+}
+.lockbutton {
+    border: 0 none;
+    border-radius: 2px 2px 2px 2px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Arial,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    padding: 7px 10px;
+    text-transform: none;
+    transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    text-align: center;
+    float: right;
+    margin-left: 10px;
+}
+.lockbutton.red {
+    background: none repeat scroll 0 0 #E0645C;
+    color: #FFFFFF;
+}
+.lockbutton.red:hover {
+    background: none repeat scroll 0 0 #999999;
+    color: #FFFFFF;
+}
+.lockbutton.light {
+    background: none repeat scroll 0 0 #999999;
+    color: #FFFFFF;
+}
+.lockbutton.light:hover {
+    background: none repeat scroll 0 0 #444444;
+    color: #FFFFFF;
+}
+.lock-outer-frame .appearance-set-success{
+    position: relative;
+    width:100%;
+    margin-top:20px;
+    float: left;
+}
+.lock-outer-frame .error_appearance{
+    float: left;
+    margin-top: 10px;
+}
